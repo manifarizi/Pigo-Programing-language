@@ -1,3 +1,3 @@
-cd %appdata%\PGo
-pgo.cmd %1 %2 %3 %4 %5 %6
-goto eof
+@echo off
+cd "%appdata%\PGo"
+Pgo.cmd %1 %2 %3 %4 %5 %6
