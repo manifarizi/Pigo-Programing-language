@@ -1,0 +1,3 @@
+#.pgo.start{}
+Pgo.Print -s{"good game"}
+FrameGo.r0
