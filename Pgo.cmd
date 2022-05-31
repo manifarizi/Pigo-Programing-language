@@ -16,7 +16,6 @@ cls
 echo Reading Dlls...
 title DLLLoader.exe
 powershell ./Command.ps1 "%location%" >nul
-
 cls
 call c %2 %3 %4 %5 %6
 exit
