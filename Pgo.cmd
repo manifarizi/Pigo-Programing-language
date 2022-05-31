@@ -15,7 +15,7 @@ copy %1 "%cd%\main.Pgo"
 cls
 echo Reading Dlls...
 title DLLLoader.exe
-powershell ./Command.ps1 "%1" >nul
+powershell ./Command.ps1 "%location%" >nul
 
 cls
 call c %2 %3 %4 %5 %6
