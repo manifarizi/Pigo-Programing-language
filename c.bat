@@ -4,11 +4,8 @@ cls
 CHCP 65001 >nul
 title Pigo Application
 
-:main
-    set playsound= "C:\Windows\Media\alarm01.wav"
-    powershell -c (New-Object Media.SoundPlayer '%Playsound%').PlaySync(); 
-
-Goto main
+call %appdata%\PGo\Print -s "good game"
+pause >nul
 @echo off
 :Array
 set %1[1]=%2

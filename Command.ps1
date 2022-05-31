@@ -1,4 +1,3 @@
-$Wgo="$args[1]"
 $star="*"
 
 Add-Content ./C.txt "@echo off" 
@@ -28,7 +27,7 @@ title Pigo Application
 (gc -encoding UTF8 C.txt) -replace "FrameGo.R0", "pause >nul" | Out-File -encoding UTF8 C.txt
 (gc -encoding UTF8 C.txt) -replace "PGo.Array", "call :array" | Out-File -encoding UTF8 C.txt
 (gc -encoding UTF8 C.txt) -replace "Pgo.Print -Array", ' call Printarray' | Out-File -encoding UTF8 C.txt
-(gc -encoding UTF8 C.txt) -replace "pgo.", "call $Wgo" | Out-File -encoding UTF8 C.txt
+(gc -encoding UTF8 C.txt) -replace "pgo.", "call %appdata%\PGo\" | Out-File -encoding UTF8 C.txt
 (gc -encoding UTF8 C.txt) -replace "CMD.", "" | Out-File -encoding UTF8 C.txt
 (gc -encoding UTF8 C.txt) -replace "_n_", " & echo." | Out-File -encoding UTF8 C.txt
 (gc -encoding UTF8 C.txt) -replace "_c_", "," | Out-File -encoding UTF8 C.txt
